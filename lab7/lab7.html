@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+</head>
+<body>
+
+    <h1>Оформление заказа</h1>
+
+    <form id="userForm">
+
+        <p>
+            <label for="userName">Имя покупателя:</label><br>
+            <input
+                type="text"
+                id="userName"
+                name="userName"
+            >
+        </p>
+
+        <p>
+            <label for="comment">Комментарий к заказу:</label><br>
+            <textarea
+                id="comment"
+                name="comment"
+                rows="4"
+                cols="40"
+            ></textarea>
+        </p>
+
+        <p>
+            <label>
+                <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                >
+                Я согласен с условиями
+            </label>
+        </p>
+
+        <!-- submit -->
+        <button type="submit">
+            Оформить заказ
+        </button>
+
+    </form>
+
+    <script src="lab7.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+</head>
+<body>
+
+    <h1>Оформление заказа</h1>
+
+    <form id="orderForm">
+
+        <!-- input type="text" -->
+        <p>
+            <label for="userName">Имя покупателя:</label><br>
+            <input
+                type="text"
+                id="userName"
+                name="userName"
+            >
+        </p>
+
+        <!-- input type="email" -->
+        <p>
+            <label for="email">Email:</label><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+            >
+        </p>
+
+        <!-- input type="password" -->
+        <p>
+            <label for="password">Пароль:</label><br>
+            <input
+                type="password"
+                id="password"
+                name="password"
+            >
+        </p>
+
+        <!-- textarea -->
+        <p>
+            <label for="comment">Комментарий к заказу:</label><br>
+            <textarea
+                id="comment"
+                name="comment"
+                rows="4"
+                cols="40"
+            ></textarea>
+        </p>
+
+        <!-- select -->
+        <p>
+            <label for="delivery">Способ доставки:</label><br>
+
+            <select id="delivery" name="delivery">
+                <option value="">Выберите способ доставки</option>
+                <option value="courier">Курьер</option>
+                <option value="pickup">Самовывоз</option>
+            </select>
+        </p>
+
+        <!-- radio -->
+        <p>
+            Способ оплаты:<br>
+
+            <label>
+                <input
+                    type="radio"
+                    name="payment"
+                    value="card"
+                >
+                Банковская карта
+            </label>
+
+            <br>
+
+            <label>
+                <input
+                    type="radio"
+                    name="payment"
+                    value="cash"
+                >
+                Наличными
+            </label>
+        </p>
+
+        <!-- select multiple -->
+        <p>
+            <label for="categories">
+                Интересующие категории:
+            </label>
+            <br>
+
+            <select
+                id="categories"
+                name="categories"
+                multiple
+                size="4"
+            >
+                <option value="notebooks">Ноутбуки</option>
+                <option value="monitors">Мониторы</option>
+                <option value="phones">Телефоны</option>
+                <option value="accessories">Аксессуары</option>
+            </select>
+        </p>
+
+        <!-- checkbox -->
+        <p>
+            <label>
+                <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                >
+                Я согласен с условиями оформления заказа
+            </label>
+        </p>
+
+        <!-- submit -->
+        <button type="submit">
+            Оформить заказ
+        </button>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
