@@ -1,164 +1,205 @@
-//Задание 1. Простая функция
-//Создайте функцию showMessage(), которая выводит «Добро пожаловать в интернет-магазин!».
-//Вызовите функцию три раза.
-/*
-function showMessage() {
+console.log("Задание 1.")
+console.log("Создайте функцию showMessage(), которая выводит «Добро пожаловать в интернет-магазин!».")
+console.log("Вызовите функцию три раза.")
+console.log("")
+
+function num1_showMessage() {
     console.log("Добро пожаловать в интернет-магазин!")
 }
 for (let i = 0; i <= 2; i++){
-    showMessage()
-}*/
+    num1_showMessage()
+}
 
-//Задание 2. Функция с параметром
-//Создайте функцию showProduct(name), которая выводит название переданного товара. Вызовите её для
-//товаров «Ноутбук», «Клавиатура» и «Мышь».
-/*
-function showProduct(name) {
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+console.log("Задание 2.")
+console.log("Создайте функцию showProduct(name), которая выводит название переданного товара.")
+console.log("Вызовите её для товаров «Ноутбук», «Клавиатура» и «Мышь»")
+console.log("")
+
+function num2_showProduct(name) {
     console.log(`Товар: ${name}`)
 }
-showProduct("Ноутбук")
-showProduct("Клавиатура")
-showProduct("Мышь")
-*/
+num2_showProduct("Ноутбук")
+num2_showProduct("Клавиатура")
+num2_showProduct("Мышь")
 
-//Задание 3. Несколько параметров
-//Создайте функцию showProduct(name, price), которая получает название и цену товара и выводит их.
-//Вызовите функцию для трёх разных товаров.
-/*
-function showProduct(name, price) {
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+
+console.log("Задание 3.")
+console.log("Создайте функцию showProduct(name, price), которая получает название и цену товара и выводит их.")
+console.log("Вызовите функцию для трёх разных товаров.")
+console.log("")
+
+function num3_showProduct(name, price) {
     console.log(`Название: ${name} | Цена: ${price}`)
 }
-showProduct("Ноутбук", 50000)
-showProduct("Клавиатура", 2300)
-showProduct("Мышь", 350)
-*/
+num3_showProduct("Ноутбук", 50000)
+num3_showProduct("Клавиатура", 2300)
+num3_showProduct("Мышь", 350)
 
-//Задание 4. Расчёт стоимости
-//Создайте функцию calculateTotal(price, count). Она должна возвращать стоимость покупки через return.
-//Проверьте функцию с несколькими значениями.
-/*
-function calculateTotal(price, count) {
-    let totalPrice = price * count
-    return totalPrice
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+console.log("Задание 4.")
+console.log("Создайте функцию calculateTotal(price, count). Она должна возвращать стоимость покупки через return.")
+console.log("Проверьте функцию с несколькими значениями.")
+console.log("")
+
+function calculateTotal(num4_price, num4_count) {
+    let num4_totalPrice = num4_price * num4_count
+    return num4_totalPrice
 }
-let func = calculateTotal(2300, 3)
-console.log(func)
-*/
+let num4_func = calculateTotal(2300, 3)
+console.log(num4_func)
 
-//Задание 5. Проверка наличия товара
-//Создайте функцию checkStock(stock). Если остаток больше нуля, вернуть «Товар есть в наличии», иначе
-//— «Товар отсутствует». Результат выведите через console.log().
-/*
-function checkStock(stock) {
-    if (stock > 0){
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+console.log("Задание 5.")
+console.log("Создайте функцию checkStock(stock). Если остаток больше нуля, вернуть «Товар есть в наличии», иначе")
+console.log("— «Товар отсутствует». Результат выведите через console.log().")
+console.log("")
+
+function num5_checkStock(num5_stock) {
+    if (num5_stock > 0){
         console.log("Товар есть в наличии")
     } else {
         console.log("Товар отсутствует")
     }
 }
-checkStock(4)
-checkStock(0)
-checkStock(-4)
-*/
+num5_checkStock(4)
+num5_checkStock(0)
+num5_checkStock(-4)
 
-//Задание 6. Расчёт скидки
-//Создайте функцию getDiscount(total). Она возвращает 15 при сумме от 10000 руб., 10 при сумме от 5000
-//до 9999 руб. и 0 при меньшей сумме. Проверьте несколько значений.
-/*
-function getDiscount(total) {
-    if (total >= 10000){
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+console.log("Задание 6.")
+console.log("Создайте функцию getDiscount(total). Она возвращает 15 при сумме от 10000 руб., 10 при сумме от 5000")
+console.log("до 9999 руб. и 0 при меньшей сумме. Проверьте несколько значений.")
+console.log("")
+
+function num6_getDiscount(num6_total) {
+    if (num6_total >= 10000){
         return console.log(`Ваша скидка: 15%`)
-    } else if (total >= 5000){
+    } else if (num6_total >= 5000){
         return console.log(`Ваша скидка: 10%`)
     } else {
         return console.log(`Ваша скидка: 0%`)
     }
 }
-getDiscount(11000)
-getDiscount(10000)
-getDiscount(9999)
-getDiscount(5000)
-getDiscount(4999)
-*/
+num6_getDiscount(11000)
+num6_getDiscount(10000)
+num6_getDiscount(9999)
+num6_getDiscount(5000)
+num6_getDiscount(4999)
 
-//Задание 7. Функция с циклом
-//Создайте функцию showPrices(price, count), которая выводит стоимость товара для количества от 1 до
-//переданного count. Например, showPrices(1500, 4) должно вывести стоимость для 1, 2, 3 и 4 штук.
-/*
-function showPrices(price, count) {
-    for (let i = 1; i <= count; i++){
-        let totalPrice = price * i
-        console.log(`Стоимость ${totalPrice}руб. для ${i} товаров`)  
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+console.log("Задание 7.")
+console.log("Создайте функцию showPrices(price, count), которая выводит стоимость товара для количества от 1 до")
+console.log("переданного count. Например, showPrices(1500, 4) должно вывести стоимость для 1, 2, 3 и 4 штук.")
+console.log("")
+
+function num7_showPrices(num7_price, num7_count) {
+    for (let i = 1; i <= num7_count; i++){
+        let num7_totalPrice = num7_price * i
+        console.log(`Стоимость ${num7_totalPrice}руб. для ${i} товаров`)  
     }
 }
-showPrices(1500, 4)
-*/
+num7_showPrices(1500, 4)
 
-//Задание 8. Параметр по умолчанию
-//Создайте функцию showUser(name = "Гость"). Вызовите showUser("Анна") и showUser(). Сравните
-//результаты.
-/*
-function showUser(name = "Гость") {
-    console.log(name)
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+console.log("Задание 8.")
+console.log(`Создайте функцию showUser(name = "Гость"). Вызовите showUser("Анна") и showUser().`)
+console.log("Сравните результаты.")
+console.log("")
+
+function num8_showUser(num8_name = "Гость") {
+    console.log(num8_name)
 }
-showUser("Анна")
-showUser()
-*/
+num8_showUser("Анна")
+num8_showUser()
 
-//Задание 9. Стрелочные функции
-//Создайте обычную функцию double(number), возвращающую удвоенное число. Затем перепишите её в
-//виде стрелочной функции. Создайте стрелочную функцию square(number), возвращающую квадрат
-//числа.
-/*
-function double(number) {
-    return number * 2
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
+
+console.log("Задание 9.")
+console.log("Создайте обычную функцию double(number), возвращающую удвоенное число. Затем перепишите её в")
+console.log("виде стрелочной функции. Создайте стрелочную функцию square(number), возвращающую квадрат числа.")
+console.log("")
+
+function num9_double(num9_number) {
+    return num9_number * 2
 }
-const double2 = (number) => number * 2
-console.log(double(2))
-console.log(double2(3))
-const square = (number) => number * number
-console.log(square(3))
-*/
+const num9_double2 = (num9_number) => num9_number * 2
+console.log(num9_double(2))
+console.log(num9_double2(3))
+const num9_square = (num9_number) => num9_number * num9_number
+console.log(num9_square(3))
 
-//Задание 10. Самостоятельная задача «Обработка заказа»
-//Исходные данные: productName = "Ноутбук", price = 65000, count = 2, stock = 5. Создайте функции
-//checkStock(stock, count), calculateTotal(price, count), getDiscount(total), calculateFinalPrice(total, discount).
-//checkStock определяет достаточность товара; calculateTotal рассчитывает стоимость; getDiscount
-//возвращает 10% от 100000 руб., 5% от 50000 руб., иначе 0%; calculateFinalPrice рассчитывает итоговую
-//стоимость. Если товара достаточно, вывести сведения о заказе, стоимости, скидке и сумме к оплате.
-//Если недостаточно — соответствующее сообщение. Проверьте разные значения price, count и stock.
+console.log("")
+console.log("-----------------------------------------------------------------------------------------------------")
+console.log("")
 
-let productName = "Ноутбук"
-let price = 65000
-let count = 2
-let stock = 5
-function checkStock(stock, count) {
-    if (stock >= count){
-        console.log(calculateFinalPrice(totalPrice, discount))
+console.log("Задание 10. Самостоятельная задача «Обработка заказа»")
+console.log(`Исходные данные: productName = "Ноутбук", price = 65000, count = 2, stock = 5. Создайте функции`)
+console.log(`checkStock(stock, count), calculateTotal(price, count), getDiscount(total), calculateFinalPrice(total, discount).`)
+console.log(`checkStock определяет достаточность товара; calculateTotal рассчитывает стоимость; getDiscount`)
+console.log(`возвращает 10% от 100000 руб., 5% от 50000 руб., иначе 0%; calculateFinalPrice рассчитывает итоговую`)
+console.log(`стоимость. Если товара достаточно, вывести сведения о заказе, стоимости, скидке и сумме к оплате.`)
+console.log(`Если недостаточно — соответствующее сообщение. Проверьте разные значения price, count и stock.`)
+console.log("")
+
+let num10_productName = "Ноутбук"
+let num10_price = 65000
+let num10_count = 2
+let num10_stock = 5
+
+function num10_checkStock(num10_stock, num10_count) {
+    if (num10_stock >= num10_count){
+        console.log(num10_calculateFinalPrice(num10_totalPrice, num10_discount))
     } else {
         console.log("Не достаточно товаров на складе. Попробуйте позже, либо закажите меньше")
     }
 }
-function calculateTotal(price, count) {
-    let totalPrice = price * count
-    return totalPrice
+
+function num10_calculateTotal(num10_price, num10_count) {
+    let num10_totalPrice = num10_price * num10_count
+    return num10_totalPrice
 }
-function getDiscount(totalPrice) {
-    if (totalPrice >= 100000){
+
+function num10_getDiscount(num10_totalPrice) {
+    if (num10_totalPrice >= 100000){
         return 0.1
-    } else if (totalPrice >= 50000) {
+    } else if (num10_totalPrice >= 50000) {
         return 0.05
     } else {
         return 0
     }
 }
 
-let totalPrice = calculateTotal(price, count)
-let discount = getDiscount(totalPrice)
+let num10_totalPrice = num10_calculateTotal(num10_price, num10_count)
+let num10_discount = num10_getDiscount(num10_totalPrice)
 
-function calculateFinalPrice(totalPrice, discount) {
-    let finalPrice = totalPrice - (totalPrice * discount)
-    return finalPrice    
+function num10_calculateFinalPrice(num10_totalPrice, num10_discount) {
+    let num10_finalPrice = num10_totalPrice - (num10_totalPrice * num10_discount)
+    return num10_finalPrice    
 }
 
-checkStock(stock, count)
+num10_checkStock(num10_stock, num10_count)
